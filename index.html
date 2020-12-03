@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employment calculator</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="favicon.png">
+	<script type="text/javascript" src="counter.js" defer></script>
+</head>
+<body class="d-flex vh-100 align-items-center justify-content-center text-center">
+	<div>
+		<div class="d-flex justify-content-center">
+			<big style="font-style:oblique; font-size: 24px;"><b>Қанша уақытта өз бағытыныз бойынша жұмысқа тұра алатынызды есептейтін калькулятор</b></big>
+		</div>
+		<div class="d-flex justify-content-center">
+			<p style="font-style:italic; font-size: 22px;">Аптасына қанша сағат <ins>тек қана өз бағытыңыз</ins> бойынша оқисыз?</p>
+		</div>
+		<div class="d-flex justify-content-center">
+			<input type="number" id="hour" class="input-number" min="1" max="168">
+		</div>
+		<div class="d-flex justify-content-center">
+			<button onclick="count()" class="btn-count">Есептеу</button>
+		</div>
+		<div class="d-flex justify-content-center">
+			<p id="result"></p>
+		</div>
+	</div>
+	<style>
+		.text-center {
+			text-align: center;
+		}
+		.vh-100 {
+			height: 100vh;
+		}
+		.d-flex {
+			display: flex;
+		}
+		.justify-content-center {
+			justify-content: center;
+		}
+		.align-items-center {
+			align-items: center;
+		}
+		.input-number {
+			border: 1px solid red;
+			border-radius: 5px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 15px;
+			padding-left: 15px;
+			font-size: 20px;
+			width: 400px;
+			text-align: center;
+		}
+		.btn-count {
+			margin-top: 10px;
+			border: 0;
+			background-color: #ff0000;
+			color: #ffffff;
+			border-radius: 5px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		.btn-count:hover {
+			background-color: #e10000;
+			color: #e1e1e1;
+		}
+	</style>
+</body>
+</html>
